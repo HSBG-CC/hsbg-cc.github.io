@@ -19,7 +19,7 @@ function FooterSection() {
         <Box>
           <Tooltip title="Source Code">
             <Link
-              href="https://github.com/stealwater/hearthstone-leaderboard"
+              href="https://github.com/HSBG-CC/hsbg-cc.github.io"
               sx={{ color: 'text.primary' }}
               target="_blank"
             >
