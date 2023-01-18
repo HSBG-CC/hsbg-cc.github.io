@@ -3,8 +3,9 @@ import { Query } from 'appwrite';
 import { useState } from 'react';
 import AppwriteConfig from '../configs/appwriteConfig';
 import { useQuery } from '@tanstack/react-query';
+import globalConstants from '../configs/globalConstants';
 
-const useListRank = (region: string, pageSize = 25, seasonId = 7) => {
+const useListRank = (region: string, pageSize = 25, seasonId = globalConstants.SEASON_ID) => {
   const HOOK_ID = 'USE_LIST_RANK';
   const [page, setPage] = useState(0);
 

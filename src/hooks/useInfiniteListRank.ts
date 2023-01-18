@@ -2,8 +2,9 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 import { Query } from 'appwrite';
 import AppwriteConfig from '../configs/appwriteConfig';
 import { database } from '../utils/appwriteSDK';
+import globalConstants from '../configs/globalConstants';
 
-const useInfiniteListRank = (region: string, pageSize = 25, seasonId = 7) => {
+const useInfiniteListRank = (region: string, pageSize = 25, seasonId = globalConstants.SEASON_ID) => {
   const HOOK_ID = 'USE_INFINITE_LIST_RANK';
   const MAX_RECORD = 500;
 
